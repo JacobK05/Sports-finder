@@ -2,6 +2,14 @@ import React from 'react'
 
 export default function mlb() {
   return (
-    <div>mlb</div>
+    <section> 
+    <div>
+      <ul>
+        <li>
+          Games
+        </li>
+      </ul>
+    </div>
+    </section>
   )
 }
