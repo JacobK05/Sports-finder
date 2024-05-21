@@ -1,4 +1,5 @@
 body {
     background-color: #dddddd ;
-    overflow: hidden;
+    overflow-x: hidden; /* Horizontal scrollbar */
+    overflow-y: auto; /* Hide vertical scrollbar */
 }

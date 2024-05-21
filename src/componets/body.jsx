@@ -2,18 +2,22 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import NbaIcon from '../assets/nbaSvg.jsx';
 import NhlIcon from '../assets/nhlSvg.jsx';
+import NbaImage from '../assets/image.png';
 import './style.css'
 export default function body() {
   return (
   <>
   <section>
     <div className='Headline-card'>
+      <img className='image' src={NbaImage} />
       <h1 className='h1'> Top Headlines </h1>
       <ul className='news-list'>
         <li className='news-item'> Minnesota Timber Wolves complete a 20 point come back to advance to the WCF vs DAL.</li>
         <li className='news-item'> Xander Schauffele wins his first ever major at Valhalla. </li>
         <li className='news-item'> The Pacers dominate the nicks in game 7 to advance the the ECF vs Boston.</li>
         <li className='news-item'> The Oilers win game 7 and will play DAL in the WCF.</li>
+        <li className='news-item'> Nelly Korda has won her sixth LPGA in seven starts </li>
+        <li className='news-item'> On Sunday Max verstapen won in Imola holding off Lando Norris who was only 0.700s back.</li>
       </ul>
     </div>
   </section>
@@ -22,9 +26,9 @@ export default function body() {
     <div className='links-card'>
       <h1 className='h1'> Quick Links </h1>
       <ul className='link-list'>
-        <li className='link-item'> <Link className='links'> NFL Countdown  </Link> </li> 
-        <li className='link-item'> <Link className='links'> NBA Playoff games </Link>  </li>
-        <li className='link-item'> <Link className='links'> NHL Playoff games </Link> </li>
+        <li className='link-item'> <Link to='/nfl/countdown' className='links'> NFL Countdown  </Link> </li> 
+        <li className='link-item'> <Link to='/nba/games' className='links'> NBA Playoff games </Link>  </li>
+        <li className='link-item'> <Link to='/nhl/games' className='links'> NHL Playoff games </Link> </li>
       </ul>
     </div>
 
