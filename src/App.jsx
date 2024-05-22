@@ -7,6 +7,7 @@ import Nhl from './pages/nhl'
 import Nfl from './pages/nfl'
 import Nba from './pages/nba'
 import Mlb from './pages/mlb'
+import Footer from './componets/footer'
 function App() {
   return (
    <>
@@ -19,6 +20,7 @@ function App() {
             <Route exact path='/nfl' element={<Nfl />} />
             <Route exact path='/mlb' element={<Mlb />} />
          </Routes>
+       <Footer />
      </BrowserRouter>
    
    

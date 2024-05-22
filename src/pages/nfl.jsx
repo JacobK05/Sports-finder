@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
-
+import './style.css'
 export default function nfl() {
   const [schedule, setSchedule] = useState([]);
 
@@ -23,14 +23,17 @@ export default function nfl() {
   console.log("Schedule:", schedule); // Check the value of schedule here
 
   return (
-    <div>
-      <h1>Week 1</h1>
-      <button onClick={fetchSchedule}>Click to see games</button>
-      <ul>
-        {schedule && schedule.map(event => (
-          <li key={event.id}>{event.name}</li>
-        ))}
-      </ul>
+    <div className='nfl-container'>
+    <div className="header-container">
+      <h1 className='h2'>Week 1</h1>
+      <button className='game-btn' onClick={fetchSchedule}>Click to see games</button>
     </div>
+    <ul className='nfl-list'>
+      {schedule && schedule.map(event => (
+        <li className='nfl-games' key={event.id}>{event.name}</li>
+      ))}
+    </ul>
+  </div>
+  
   );
 }
