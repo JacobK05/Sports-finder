@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
-//https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard
-export default function nfl() { // Capitalize component name
-  const [schedule, setSchedule] = useState("");
 
-  const fetchSchedule = () => { 
+export default function nfl() {
+  const [schedule, setSchedule] = useState([]);
+
+  const fetchSchedule = () => {
     Axios.get("https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard")
       .then((res) => {
-        console.log(res.data);
-        setSchedule(res.data); // Optionally set the fetched data to state
+        console.log("Fetched data:", res.data.events);
+        setSchedule(res.data.events);
       })
       .catch((error) => {
         console.error('Error fetching schedule:', error);
@@ -16,12 +16,21 @@ export default function nfl() { // Capitalize component name
   };
 
   useEffect(() => {
-    fetchSchedule(); // Fetch schedule when component mounts
-  }, []); // Empty dependency array ensures it only runs once
+    // Uncomment the line below if you want to fetch data on component mount
+    // fetchSchedule();
+  }, []);
+
+  console.log("Schedule:", schedule); // Check the value of schedule here
 
   return (
     <div>
-      {/* Render fetched data or other components here */}
+      <h1>Week 1</h1>
+      <button onClick={fetchSchedule}>Click to see games</button>
+      <ul>
+        {schedule && schedule.map(event => (
+          <li key={event.id}>{event.name}</li>
+        ))}
+      </ul>
     </div>
   );
 }
