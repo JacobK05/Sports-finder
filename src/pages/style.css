@@ -1,7 +1,7 @@
 .nfl-container {
     position: absolute;
     top: 20%;
-    left: 45%;
+    left: 55%;
     transform: translate(-50%, -50%);
     text-align: center; /* Center text content */
   }
@@ -61,3 +61,68 @@
     padding: 5px;
     text-align: center;
   }
+
+  .nba-card {
+    border: 2px ;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 20%;
+    position:absolute;
+    top: 30%;
+    left: 10%
+  }
+
+  .nba-content {
+    padding: 10px;
+    margin: 10px
+}
+.nba-list {
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.nba-item {
+    border-bottom: #dcdddf 1px solid;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-weight:300;
+}
+
+.nfl-card {
+    border: 2px ;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 30%;
+    position:absolute;
+    top: 30%;
+    left: 5%
+}
+
+.nfl-news {
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.nfl-item {
+    border-bottom: #dcdddf 1px solid;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-weight:300;
+}
+
+.nba-news {
+    border: 2px ;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 50%;
+    position:absolute;
+    top: 20%;
+    left: 35%
+}
