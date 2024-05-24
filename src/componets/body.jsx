@@ -27,8 +27,8 @@ export default function body() {
       <h1 className='h1'> Quick Links </h1>
       <ul className='link-list'>
         <li className='link-item'> <Link to='/nfl/countdown' className='links'> NFL Countdown  </Link> </li> 
-        <li className='link-item'> <Link to='/nba/games' className='links'> NBA Playoff games </Link>  </li>
-        <li className='link-item'> <Link to='/nhl/games' className='links'> NHL Playoff games </Link> </li>
+        <li className='link-item'> <Link to='/nba' className='links'> NBA Playoff games </Link>  </li>
+        <li className='link-item'> <Link to='/nhl' className='links'> NHL Playoff games </Link> </li>
       </ul>
     </div>
 
@@ -39,16 +39,16 @@ export default function body() {
       <h1 className='h1'> Upcoming Games </h1>
       <ul className='game-list'>
         <li className='game-items'> 
-        <NbaIcon className='Icon' /> MIN vs DAL 
+        <NbaIcon className='Icon' /> MIN vs DAL 0-1
         </li>
         <li className='game-items'>
-        <NbaIcon className='Icon' /> IND vs BOS 
+        <NbaIcon className='Icon' /> IND vs BOS 0-1
         </li>
         <li className='nhl-items'> 
-        <NhlIcon className='Icon' /> EMD vs DAL 
+        <NhlIcon className='Icon' /> EMD vs DAL 0-0
         </li>
         <li className='nhl-items'>
-        <NhlIcon className='Icon' /> FLA vs NYR 
+        <NhlIcon className='Icon' /> FLA vs NYR 1-0
         </li>
       </ul>
     </div>
