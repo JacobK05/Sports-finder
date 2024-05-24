@@ -9,7 +9,7 @@ export default function nba() {
       <h1 className='h1'> NBA Conference Finals </h1>
       <ul className='nba-list'>
         <li className='nba-item'>
-          BOS VS IND: BOS 1-0
+          BOS VS IND: BOS 2-0
         </li>
         <li className='nba-item'>
           MIN VS DAL: DAL 1-0

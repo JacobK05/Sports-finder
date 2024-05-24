@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 export default function nflcount() {
   const calculateCountdown = () => {
     const countDownDate = new Date("Sep 7, 2024 07:20:00").getTime();
@@ -48,16 +48,20 @@ export default function nflcount() {
           <span className='days'>{countdown.days}</span>
         
         
-          <span className='count'>Hours:</span>
+          <span className='count'>Hrs:</span>
           <span className='hours'>{countdown.hours}</span>
       
-          <span className='count'>Minutes:</span>
+          <span className='count'>Min:</span>
           <span className='minutes'>{countdown.minutes}</span>
     
-          <span className='count'>Seconds:</span>
+          <span className='count'>Sec:</span>
           <span className='seconds'>{countdown.seconds}</span>
         </div>
       </div>
+      <Link to='/nfl'>
+        <button className='nflBtn' style={{cursor: 'pointer'}}> Go to NFL</button>
+      </Link>
+    
     </main>
   );
 }

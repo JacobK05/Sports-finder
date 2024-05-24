@@ -42,10 +42,10 @@ export default function body() {
         <NbaIcon className='Icon' /> MIN vs DAL 0-1
         </li>
         <li className='game-items'>
-        <NbaIcon className='Icon' /> IND vs BOS 0-1
+        <NbaIcon className='Icon' /> IND vs BOS 0-2
         </li>
         <li className='nhl-items'> 
-        <NhlIcon className='Icon' /> EMD vs DAL 0-0
+        <NhlIcon className='Icon' /> EMD vs DAL 1-0
         </li>
         <li className='nhl-items'>
         <NhlIcon className='Icon' /> FLA vs NYR 1-0

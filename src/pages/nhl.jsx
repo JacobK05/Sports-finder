@@ -8,7 +8,7 @@ export default function nhl() {
       <h1 className='h1'> NHL Conference Finals </h1>
       <ul className='nba-list'>
         <li className='nba-item'>
-          EDM VS DAL:  0-0
+          EDM VS DAL:  1-0
         </li>
         <li className='nba-item'>
           FLA VS NYR: FLA 1-0

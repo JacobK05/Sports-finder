@@ -39,20 +39,15 @@
 
 .link:hover {
     font-size: 25px;
-    background-image: linear-gradient(to right, transparent 50%, #4ca64c 50%);
-    background-origin: 0;
-    background-size: 200% 50%;
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    transition: background-position 0.5s;
-    background-position: -100% 85%;
+    opacity: 0.8;
+    transition: color .2s ease; 
 }
 
 
 .upcoming-card {
     border: 2px ;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     width: 20%;
     position:absolute;
@@ -63,7 +58,7 @@
 .Headline-card {
     border: 2px ;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     position:absolute;
     top: 15%;
@@ -73,10 +68,10 @@
 .links-card {
     border: 2px ;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     width: 200px;
-    height: 300px;
+    height: 280px;
     position:absolute;
     top: 30%;
     left: 5%;
