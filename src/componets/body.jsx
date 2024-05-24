@@ -39,16 +39,16 @@ export default function body() {
       <h1 className='h1'> Upcoming Games </h1>
       <ul className='game-list'>
         <li className='game-items'> 
-        <NbaIcon className='Icon' /> MIN vs DAL 0-1
+        <NbaIcon className='Icon' /> MIN vs DAL 
         </li>
         <li className='game-items'>
-        <NbaIcon className='Icon' /> IND vs BOS 0-2
+        <NbaIcon className='Icon' /> IND vs BOS 
         </li>
         <li className='nhl-items'> 
-        <NhlIcon className='Icon' /> EMD vs DAL 1-0
+        <NhlIcon className='Icon' /> EMD vs DAL 
         </li>
         <li className='nhl-items'>
-        <NhlIcon className='Icon' /> FLA vs NYR 1-0
+        <NhlIcon className='Icon' /> FLA vs NYR 
         </li>
       </ul>
     </div>

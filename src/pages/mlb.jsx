@@ -5,7 +5,7 @@ export default function NFL() {
   const [schedule, setSchedule] = useState([]);
 
   const fetchSchedule = () => { 
-    Axios.get("http://statsapi.mlb.com/api/v1/schedule/games/?sportId=1")
+    Axios.get("https://statsapi.mlb.com/api/v1/schedule/games/?sportId=1")
       .then((res) => {
         const games = res.data.dates[0].games;
         const teamsPlayingToday = games.map(game => ({
